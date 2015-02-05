@@ -1,0 +1,31 @@
+import javax.swing.JOptionPane;
+
+public class Exponent
+{
+	public static void main(String[] args)
+	{
+		String userInput;
+		int one;
+		
+		userInput = JOptionPane.showInputDialog(null, "Enter an integer");
+		one = Integer.parseInt(userInput);		
+				
+		JOptionPane.showMessageDialog(null, "The square of variable 1 = " + square(one));
+		
+		JOptionPane.showMessageDialog(null, "The cube of variable 1 = " + cube(one));
+		
+	}
+	
+	public static double square(int sqOne)
+	{
+		double varSquared = sqOne * sqOne;
+		return varSquared;
+	}
+	
+	public static double cube(int cubeOne)
+	{
+		double varCubed = square(cubeOne)*cubeOne;
+		return varCubed;
+	}
+	
+}
